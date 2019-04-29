@@ -1,5 +1,7 @@
 {
   "name": "Projectionic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
