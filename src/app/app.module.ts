@@ -9,11 +9,16 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { FormsModule } from '@angular/forms';
+
 
 import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { Firebase } from '@ionic-native/firebase/ngx';
+
+
 
 const config = {
   apiKey: "AIzaSyAW9_c1Ox7_58GMaTtTLo6Bega68ooIjp4",
@@ -27,12 +32,13 @@ const config = {
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,AngularFireModule.initializeApp(config),
+  imports: [BrowserModule,FormsModule, IonicModule.forRoot(), AppRoutingModule,AngularFireModule.initializeApp(config),
     AngularFirestoreModule],
   providers: [
     StatusBar,
     SplashScreen,
     Firebase,
+    BarcodeScanner,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     LocalNotifications
   ],
