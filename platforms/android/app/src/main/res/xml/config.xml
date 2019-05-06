@@ -80,4 +80,8 @@
     <feature name="QRScanner">
         <param name="android-package" value="com.bitpay.cordova.qrscanner.QRScanner" />
     </feature>
+    <feature name="FirebaseAuthentication">
+        <param name="android-package" value="by.chemerisuk.cordova.firebase.FirebaseAuthenticationPlugin" />
+        <param name="onload" value="false" />
+    </feature>
 </widget>

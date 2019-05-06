@@ -97,6 +97,14 @@ module.exports = [
     "clobbers": [
       "QRScanner"
     ]
+  },
+  {
+    "id": "cordova-plugin-firebase-authentication.FirebaseAuthentication",
+    "file": "plugins/cordova-plugin-firebase-authentication/www/FirebaseAuthentication.js",
+    "pluginId": "cordova-plugin-firebase-authentication",
+    "merges": [
+      "cordova.plugins.firebase.auth"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -112,7 +120,10 @@ module.exports.metadata =
   "cordova-plugin-local-notification": "0.9.0-beta.2",
   "cordova-plugin-firebase": "2.0.5",
   "phonegap-plugin-barcodescanner": "8.0.1",
-  "cordova-plugin-qrscanner": "3.0.1"
+  "cordova-plugin-qrscanner": "3.0.1",
+  "cordova-support-android-plugin": "1.0.1",
+  "cordova-support-google-services": "1.3.1",
+  "cordova-plugin-firebase-authentication": "1.1.2"
 };
 // BOTTOM OF METADATA
 });

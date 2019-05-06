@@ -39,6 +39,10 @@
             {
               "xml": "<feature name=\"QRScanner\"><param name=\"android-package\" value=\"com.bitpay.cordova.qrscanner.QRScanner\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"FirebaseAuthentication\"><param name=\"android-package\" value=\"by.chemerisuk.cordova.firebase.FirebaseAuthenticationPlugin\" /><param name=\"onload\" value=\"false\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -204,6 +208,16 @@
     },
     "cordova-plugin-qrscanner": {
       "PACKAGE_NAME": "com.notify.app"
+    },
+    "cordova-support-android-plugin": {
+      "PACKAGE_NAME": "com.notify.app"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "com.notify.app"
+    },
+    "cordova-plugin-firebase-authentication": {
+      "FIREBASE_AUTH_VERSION": "16.1.+",
+      "PACKAGE_NAME": "com.notify.app"
     }
   },
   "dependent_plugins": {},
@@ -305,6 +319,14 @@
       "clobbers": [
         "QRScanner"
       ]
+    },
+    {
+      "id": "cordova-plugin-firebase-authentication.FirebaseAuthentication",
+      "file": "plugins/cordova-plugin-firebase-authentication/www/FirebaseAuthentication.js",
+      "pluginId": "cordova-plugin-firebase-authentication",
+      "merges": [
+        "cordova.plugins.firebase.auth"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -318,6 +340,9 @@
     "cordova-plugin-local-notification": "0.9.0-beta.2",
     "cordova-plugin-firebase": "2.0.5",
     "phonegap-plugin-barcodescanner": "8.0.1",
-    "cordova-plugin-qrscanner": "3.0.1"
+    "cordova-plugin-qrscanner": "3.0.1",
+    "cordova-support-android-plugin": "1.0.1",
+    "cordova-support-google-services": "1.3.1",
+    "cordova-plugin-firebase-authentication": "1.1.2"
   }
 }

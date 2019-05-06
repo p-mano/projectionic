@@ -7,12 +7,16 @@ import { TabsPageRoutingModule } from './tabs.router.module';
 
 import { TabsPage } from './tabs.page';
 
+// import {SelectSearchableModule} from 'ionic-select-searchable';
+
+
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    TabsPageRoutingModule
+    TabsPageRoutingModule,
+    // SelectSearchableModule
   ],
   declarations: [TabsPage]
 })

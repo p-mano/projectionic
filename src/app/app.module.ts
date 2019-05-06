@@ -18,6 +18,10 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { Firebase } from '@ionic-native/firebase/ngx';
 
+// import {SelectSearchableModule} from 'ionic-select-searchable';
+
+
+
 
 
 const config = {

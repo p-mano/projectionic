@@ -96,6 +96,7 @@ apply from: "../cordova-plugin-local-notification/starter-localnotification.grad
 apply from: "../cordova-plugin-firebase/starter-build.gradle"
 apply from: "../phonegap-plugin-barcodescanner/app-barcodescanner.gradle"
 apply from: "../cordova-plugin-qrscanner/app-qrscanner.gradle"
+apply from: "../cordova-support-google-services/app-build.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
@@ -278,6 +279,7 @@ dependencies {
     compile "com.google.firebase:firebase-config:+"
     compile "com.google.firebase:firebase-perf:+"
     compile "com.android.support:support-v4:27.+"
+    compile "com.google.firebase:firebase-auth:16.1.+"
     // SUB-PROJECT DEPENDENCIES END
 }
 
